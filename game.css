@@ -1,0 +1,145 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.gameContainer {
+    margin: auto;
+    background-color: rgb(177, 177, 177);
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    height: 125px;
+    width: 125px;
+    background-color: black;
+    border: 2px solid black;
+}
+.box:active {
+    border: none;
+}
+.colorsContainer {
+    width: 275px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    row-gap: 25px;
+}
+.red {
+    background-color: rgb(218, 0, 0);
+}
+
+.red:active {
+    background-color: rgb(255, 0, 0);
+    border: 2px solid white;
+}
+.active0 {
+    border: 2px solid white;
+    background-color: rgb(255, 0, 0);
+}
+.green {
+    background-color: rgb(0, 105, 0);
+}
+
+.active1 {
+    background-color: rgb(0, 198, 0);
+    border: 2px solid white;
+}
+
+.green:active {
+    background-color: rgb(0, 198, 0);
+    border: 2px solid white;
+}
+
+.yellow {
+    background-color: rgb(218, 218, 2);
+}
+
+.active3 {
+    background-color: rgb(255, 255, 2);
+    border: 2px solid white;
+}
+
+.yellow:active {
+    background-color: rgb(255, 255, 2);
+    border: 2px solid white;
+}
+
+
+.blue {
+    background-color: rgb(41, 41, 201);
+}
+
+.active2 {
+    background-color: rgb(53, 53, 255);
+    border: 2px solid white;
+}
+.blue:active {
+    background-color: rgb(53, 53, 255);
+    border: 2px solid white;
+}
+#Level {
+    visibility: hidden;
+}
+
+#Title {
+    font-size: 2.5rem;
+}
+#start {
+    width: 100px;
+    height: 30px;
+    box-shadow: 1px 2px 2px rgb(150, 30, 50);
+}
+
+#start:active {
+    box-shadow: none;
+    border: 1px solid rgb(150, 30, 50);
+}
+
+@media screen and (max-width: 398px) {
+    .gameContainer {
+        height: 100vh;
+    }
+    .box {
+        height: 95px;
+        width: 95px;
+    }
+    .colorsContainer {
+        width: 205px;
+        grid-template-columns: repeat(2, 110px);
+        row-gap: 15px;
+    }
+}
+
+@media screen and (max-width: 210px) {
+    .box {
+        height: 65px;
+        width: 65px;
+    }
+    .colorsContainer {
+        width: 140px;
+        grid-template-columns: repeat(2, 75px);
+        row-gap: 10px;
+    }
+    #Title {
+        font-size: 1.5rem;
+    }
+    #start {
+        width: 60px;
+        height: 20px;
+        font-size: 0.8rem;
+    }
+}
