@@ -125,17 +125,13 @@ body {
 }
 
 @media screen and (max-width: 210px) {
-    .box {
-        height: 65px;
-        width: 65px;
-    }
+
     .colorsContainer {
-        width: 140px;
-        grid-template-columns: repeat(2, 75px);
+        grid-template-columns: repeat(2, 105px);
         row-gap: 10px;
     }
     #Title {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
     #start {
         width: 60px;
