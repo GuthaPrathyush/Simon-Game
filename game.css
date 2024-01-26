@@ -114,12 +114,12 @@ body {
         height: 100vh;
     }
     .box {
-        height: 95px;
-        width: 95px;
+        height: 110px;
+        width: 110px;
     }
     .colorsContainer {
-        width: 205px;
-        grid-template-columns: repeat(2, 110px);
+        width: 235px;
+        grid-template-columns: repeat(2, 125px);
         row-gap: 15px;
     }
 }
